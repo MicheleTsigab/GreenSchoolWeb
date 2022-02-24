@@ -1,20 +1,22 @@
 <!doctype html>
+{%load static %}
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Dehna E-Health Care</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="Asset 16x16.png" rel="icon" sizes="21x16" type="image/png">
-<link href="Asset 32x32.png" rel="icon" sizes="42x32" type="image/png">
-<link href="Asset 64x64.png" rel="icon" sizes="84x64" type="image/png">
-<link href="font-awesome.min.css" rel="stylesheet">
-<link href="Green_school.css" rel="stylesheet">
-<link href="index.css" rel="stylesheet">
-<script src="jquery-1.12.4.min.js"></script>
-<script src="util.min.js"></script>
-<script src="carousel.min.js"></script>
-<script src="jquery-ui.min.js"></script>
-<script src="wwb16.min.js"></script>
+
+<link href="{% static 'main/Asset 16x16.png' %}" rel="icon" sizes="21x16" type="image/png">
+<link href="{% static 'main/Asset 32x32.png' %}" rel="icon" sizes="42x32" type="image/png">
+<link href="{% static 'main/Asset 64x64.png' %}" rel="icon" sizes="84x64" type="image/png">
+<link href="{% static 'main/font-awesome.min.css' %}" rel="stylesheet">
+<link href="{% static 'main/Green_school.css' %}" rel="stylesheet">
+<link href="{% static 'main/index.css' %}" rel="stylesheet">
+<script src="{% static 'main/jquery-1.12.4.min.js' %}"></script>
+<script src="{% static 'main/util.min.js' %}"></script>
+<script src="{% static 'main/carousel.min.js' %}"></script>
+<script src="{% static 'main/jquery-ui.min.js' %}"></script>
+<script src="{% static 'main/wwb16.min.js' %}"></script>
 <script>
 $(document).ready(function()
 {
@@ -67,7 +69,7 @@ $(document).ready(function()
 <div id="LayoutGrid9">
 <div class="col-1">
 <div id="wb_Image1" style="display:inline-block;width:107px;height:142px;z-index:4;">
-<a href="./index.html"><img src="logo (2).svg" id="Image1" alt=""></a>
+<a href="./index.html"><img src="{%static 'main/logo (2).svg'%}" id="Image1" alt=""></a>
 </div>
 </div>
 <div class="col-2">
@@ -264,7 +266,7 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div id="wb_Image2" style="display:inline-block;width:147px;height:195px;z-index:47;">
-<a href="./index.html"><img src="logo (3).svg" id="Image2" alt=""></a>
+<a href="./index.html"><img src="{%static 'main/logo (3).svg'%}" id="Image2" alt=""></a>
 </div>
 </div>
 <div class="col-2">
