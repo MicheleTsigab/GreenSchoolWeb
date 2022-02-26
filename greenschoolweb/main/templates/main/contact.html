@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Registration</title>
+<title>Contact</title>
 {%load static%}
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="{%static 'main/Asset 16x16.png' %}" rel="icon" sizes="21x16" type="image/png">
@@ -26,7 +26,7 @@
 <div id="LayoutGrid12">
 <div class="col-1">
 <div id="wb_Image1" style="display:inline-block;width:85px;height:92px;z-index:0;">
-<a href="./index.html"><img src="{%static 'main/logo (2).svg'%}" id="Image1" alt=""></a>
+<a href="/"><img src="{%static 'main/logo (2).svg'%}" id="Image1" alt=""></a>
 </div>
 </div>
 <div class="col-2">
@@ -38,7 +38,7 @@
 </div>
 </div>
 <div id="wb_LayoutGrid1">
-<form name="contact" method="post" action="/done" enctype="text/plain" id="LayoutGrid1">
+<form name="contact" method="get"  action="/done"enctype="text/plain" id="LayoutGrid1">
     {% csrf_token %} 
 <div class="row">
 <div class="col-1">
