@@ -1,2 +1,2 @@
 # GreenSchoolWeb
-A web project.
+A web project made with django, html, css and js.
